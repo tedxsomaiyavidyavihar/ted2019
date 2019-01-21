@@ -35,7 +35,7 @@ h1,h2,h3,h4 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 3rem;
   letter-spacing: 12px;
   text-transform: uppercase;
@@ -817,4 +817,12 @@ Added by Sneha
 	max-width: 300px;
 	height: 250px;
 	filter: grayscale(1.9) brightness(0.85) contrast(1.00);
+}
+
+.fntlocation {
+	font-size: 1.5rem;
+}
+
+.pdfnt {
+	font-size: 5rem;
 }
