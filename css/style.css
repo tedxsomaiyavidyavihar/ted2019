@@ -367,7 +367,8 @@ a:hover, a:active, a:focus {
 
 #about {
   background: #f0f0f0;
-  background-image: url("/tedx2019/images/background.jpg");
+  /*background-image: url("/tedx2019/images/background.jpg");*/
+  background-image: url("https://tedxsomaiyavidyavihar.github.io/ted2019/images/background.jpg");
 }
 
 #about .item {
