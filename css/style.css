@@ -43,7 +43,7 @@ h1 {
 }
 
 h2 {
-  color: #e44c65;
+  color: #E62B1E;
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 4px;
@@ -75,12 +75,12 @@ p {
 }
 
 .btn:focus {
-  background: #e44c65;
+  background: #E62B1E;
   border-color: transparent;
 }
 
 .btn-success {
-  background: #e44c65;
+  background: #E62B1E;
   font-weight: 300;
   letter-spacing: 2px;
   padding: 14px 32px;
@@ -92,14 +92,14 @@ p {
 }
 
 a {
-  color: #e44c65;
+  color: #E62B1E;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
 }
 a:hover, a:active, a:focus {
-  color: #e44c65;
+  color: #E62B1E;
   outline: none;
 }
 
@@ -123,7 +123,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 .section-title {
-  padding-bottom: 62px;
+  /*padding-bottom: 62px;*/
 }
 
 #about .section-title {
@@ -184,7 +184,7 @@ a:hover, a:active, a:focus {
 .sk-spinner-pulse {
   width: 60px;
   height: 60px;
-  background-color: #e44c65;
+  background-color: #E62B1E;
   border-radius: 100%;
   margin: 40px auto;
   -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
@@ -510,7 +510,7 @@ a:hover, a:active, a:focus {
 }
 
 #contact .form-control:focus {
-  border-color: #e44c65;
+  border-color: #E62B1E;
   color: #ffffff;
 }
 
@@ -519,7 +519,7 @@ a:hover, a:active, a:focus {
 }
 
 #contact input[type="submit"] {
-  background: #e44c65;
+  background: #E62B1E;
   border:none;
   color: #ffffff;
   font-weight: 400;
@@ -572,7 +572,7 @@ footer {
 
 .social-icon li a:hover {
   background: #ffffff;
-  color: #e44c65;
+  color: #E62B1E;
 }
 
 
@@ -600,7 +600,7 @@ footer {
 }
 
 .go-top:hover {
-  background: #e44c65;
+  background: #E62B1E;
   color: #ffffff;
 }
 
@@ -656,7 +656,7 @@ footer {
   }
 
   img {
-    width: 100%;
+    /*width: 100%;*/
   }
 
   #about,
@@ -713,4 +713,107 @@ Added by Sneha
 {
 	width:225px;
 	height: 225px;
+}
+
+
+
+
+/*---------------------------------------
+    About Section              
+-----------------------------------------*/
+
+#speaker {
+  background: #f0f0f0;
+ /* background-image: url("/tedx2019/images/background.jpg");*/
+}
+
+#speaker .item {
+  width: 100%;
+  display: block;
+}
+
+#speaker .about-thumb {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 100px;
+  position: relative;
+}
+
+#speaker .about-img img {
+  border: 8px solid #ffffff;
+  position: absolute;
+  left: -120px;
+  bottom: -325px;
+  padding: 12px;
+}
+
+#speaker .team-thumb {
+  width: 100%;
+  height: 400px;
+  margin: 32px 0;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#speaker .team-thumb .image-holder {
+  position: relative;
+  top: 40px;
+  display: inline-block;
+  margin-bottom: 40px;
+  padding: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#speaker .team-thumb .heading {
+  font-weight: bold;
+  position: relative;
+  top: 10px;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#speaker .team-thumb:hover {
+  background: #304352;
+}
+
+#speaker .team-thumb:hover .image-holder {
+  top: -40px;
+  margin-bottom: 0px;
+}
+
+#speaker .team-thumb:hover .heading {
+  top: -10px;
+}
+
+#speaker .team-thumb .description {
+  font-size: 18px;
+  width: 80%;
+  margin: 0 auto;
+  opacity: 0;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+#speaker .team-thumb:hover .description {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+#speaker .team-thumb:hover p.description {
+  color: #ffffff;
+}
+
+.img-circle-hw{
+	max-width: 300px;
+	height: 250px;
+	filter: grayscale(1.9) brightness(0.85) contrast(1.00);
 }
