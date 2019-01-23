@@ -140,7 +140,7 @@ a:hover, a:active, a:focus {
 #about,
 #gallery,
 #contact {
-  padding-top: 120px;
+  padding-top: 10px;
   padding-bottom: 120px;
   position: relative;
 }
@@ -366,9 +366,9 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #about {
-  background: #f0f0f0;
+  background: black;
   /*background-image: url("/tedx2019/images/background.jpg");*/
-  background-image: url("https://tedxsomaiyavidyavihar.github.io/ted2019/images/background.jpg");
+ 
 }
 
 #about .item {
@@ -724,7 +724,7 @@ Added by Sneha
 -----------------------------------------*/
 
 #speaker {
-  background: #f0f0f0;
+  background: grey;
  /* background-image: url("/tedx2019/images/background.jpg");*/
 }
 
@@ -825,4 +825,49 @@ Added by Sneha
 
 .pdfnt {
 	font-size: 5rem;
+}
+
+
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+  float: center;
+    width: 100%;
+   
+    
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
 }
