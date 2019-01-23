@@ -4,7 +4,8 @@ Snapshot Template
 http://www.templatemo.com/tm-493-snapshot
 
 */
-
+.speaker{height:250px;}
+.speaker .speaker-img>img{height:250px!important;}
 
 /* Body 
 ------------------------------------- */
@@ -245,6 +246,7 @@ a:hover, a:active, a:focus {
   position: relative;
   display: block;
   padding-bottom: 2px;
+  padding-top: 20px;
 }
 
 .navbar-default .navbar-nav li a span:before {
@@ -303,7 +305,8 @@ a:hover, a:active, a:focus {
 
 .navbar-default .navbar-toggle {
      border: none;
-     padding-top: 10px;
+     padding-top: 20px;
+	 
   }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -750,7 +753,7 @@ Added by Sneha
 
 #speaker .team-thumb {
   width: 100%;
-  height: 400px;
+  height: 300px;
   margin: 32px 0;
   text-align: center;
   background: #ffffff;
@@ -814,9 +817,10 @@ Added by Sneha
 }
 
 .img-circle-hw{
-	max-width: 300px;
-	height: 250px;
+	max-width: 150px;
+	height: 150px;
 	filter: grayscale(1.9) brightness(0.85) contrast(1.00);
+	border-radius:50%;
 }
 
 .fntlocation {
@@ -824,7 +828,7 @@ Added by Sneha
 }
 
 .pdfnt {
-	font-size: 5rem;
+	/*font-size: 5rem;*/
 }
 
 
