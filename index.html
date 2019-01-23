@@ -19,6 +19,7 @@ https://vegas.jaysalvat.com/
 Caption Hover Effects
 http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 -->
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -27,12 +28,14 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
     <link rel="stylesheet" href="css/owl.theme.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/vegas.min.css">
-	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Google web font  -->
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
 	
 	<!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://matthew.wagerfield.com/parallax/deploy/jquery.parallax.js"></script>
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -51,15 +54,67 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
 	
-	
-	<style>
-	.sociopad{margin-top:26px;}
+<style>
+.sociopad{margin-top:26px;}
 	.font-italic{font-style: italic !important;line-height:29px;font-size:18px;}
 	h4{font-size:30px;}
-	#theme {background: white;}
+	#theme {background: lightgrey;}
 	#register {background: white;}
 	
-	</style>
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100);
+body {
+  font-family: "Lato";
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#particles-js, #parallax, .layer, .some-space, .some-more-space {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+#particles-js {
+  opacity: 0.6;
+}
+
+.some-space {
+  animation: rotate 18s 0.5s infinite linear reverse;
+}
+
+.some-more-space {
+  -webkit-animation: rotate 15s 0.1s infinite linear;
+          animation: rotate 15s 0.1s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+            transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+            transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+            transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+            transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+  }
+}
+</style>
 </head>
 <body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
@@ -86,7 +141,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
       </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#top" class="smoothScroll"><span></span></a></li>
+            <li><a href="#top1" class="smoothScroll"><span></span></a></li>
             <li><a href="#about" class="smoothScroll"><span>About</span></a></li>
             <li><a href="#theme" class="smoothScroll"><span>Themes</span></a></li>
             <li><a href="register.html" class="smoothScroll"><span>Get Involved</span></a></li>
@@ -123,11 +178,24 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 <!-- About section -->
 
 <section id="about">
+<div id="parallax" >
+  <div class="layer" data-depth="0.6">
+    <div class="some-space"></div>
+  </div>
+<div class="layer" data-depth="0.4">
+    <div id="particles-js"><canvas class="particles-js-canvas-el" min-height = "100vh"
+  min-width = "100vw" width="100vw !important" height="100vh !important"></canvas></div>
+  </div>
+ <div class="layer" data-depth="0.3">
+    <div class="some-more-space"></div>
+  </div>
+</div> 
+
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-sm-12 wow fadeInUp sociopad" data-wow-delay="0.2s">
         <div class="abou_head redfont">
-		<h4>ABOUT <b style="font-weight:800">TED</b></h4>
+		<h4 style="font-size:20px!important;">ABOUT <b style="font-weight:800">TED</b></h4>
 		</div>
 		<p class="font-italic whitefont">TED is a nonprofit organization devoted to spreading ideas, usually in the form of short, powerful talks. TED began in 1984 as a conference where Technology, Entertainment and Design converged, and today covers almost all topics — from science to business to global issues — in more than 100 languages. It is a global community, welcoming people from every discipline and culture who seek a deeper understanding of the world.</p>
       </div>
@@ -142,7 +210,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 	  
 	  <div class="col-md-6 col-sm-12 wow fadeInUp sociopad" data-wow-delay="0.2s">
         <div class="abou_head redfont">
-		<h4>ABOUT <b style="font-weight:800">TEDx</b></h4>
+		<h4 style="font-size:20px!important;">ABOUT <b style="font-weight:800">TEDx</b></h4>
 		</div>
 		<p class="font-italic whitefont">The TEDx Program is designed to help communities, organizations and individuals to spark conversation and connection through local TED-like experiences. At TEDx events, a screening of TED Talks videos — or a combination of live presenters and TED Talks videos — sparks deep conversation and connections at the local level. TEDx events are planned and coordinated independently, under a free license granted by TED.</p>
 	  </div>
@@ -151,13 +219,135 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 	  
 	  <div class="col-md-6 col-sm-12 wow fadeInUp sociopad" data-wow-delay="0.2s">
         <div class="abou_head redfont">
-		<h4>What is <b style="font-weight:800">TEDxSomaiyaVidyavihar?</b></h4>
+		<h4 style="font-size:20px!important;">What is <b style="font-weight:800">TEDxSomaiyaVidyavihar?</b></h4>
 		</div>
 		<p class="font-italic whitefont">TEDxSomaiyaVidyavihar is an independently organised TED-like event by K.J.Somaiya College of Engineering and K.J.Somaiya Institute of Management Studies and Research. Our vision is to make TEDxSomaiyaVidyavihar a platform where community-driven people can showcase their ideas that will lead to a change in attitudes, lives and, ultimately, the world.</p>
       </div>
 	  
     </div>
   </div>
+  
+<script>
+$("#parallax").parallax({
+	invertX: true,
+	invertY: true,
+	scalarX: 10,
+	frictionY: 0.1
+});
+
+particlesJS("particles-js", {
+	particles: {
+		number: {
+			value: 350,
+			density: {
+				enable: true,
+				value_area: 800
+			}
+		},
+		color: {
+			value: "#ff0000"
+		},
+		shape: {
+			type: "circle",
+			stroke: {
+				width: 0,
+				color: "ff0000"
+			},
+			polygon: {
+				nb_sides: 5
+			},
+			image: {
+				src: "",
+				width: 100,
+				height: 100
+			}
+		},
+		opacity: {
+			value: 0.5,
+			random: false,
+			anim: {
+				enable: false,
+				speed: 1,
+				opacity_min: 0.1,
+				sync: false
+			}
+		},
+		size: {
+			value: 3,
+			random: true,
+			anim: {
+				enable: false,
+				speed: 40,
+				size_min: 0.1,
+				sync: false
+			}
+		},
+		line_linked: {
+			enable: true,
+			distance: 150,
+			color: "#ff0000",
+			opacity: 0.4,
+			width: 1
+		},
+		move: {
+			enable: true,
+			speed: 6,
+			direction: "none",
+			random: false,
+			straight: false,
+			out_mode: "out",
+			bounce: false,
+			attract: {
+				enable: false,
+				rotateX: 600,
+				rotateY: 1200
+			}
+		}
+	},
+	interactivity: {
+		detect_on: "canvas",
+		events: {
+			onhover: {
+				enable: true,
+				mode: "grab"
+			},
+			onclick: {
+				enable: true,
+				mode: "push"
+			},
+			resize: true
+		},
+		modes: {
+			grab: {
+				distance: 140,
+				line_linked: {
+					opacity: 1
+				}
+			},
+			bubble: {
+				distance: 400,
+				size: 40,
+				duration: 2,
+				opacity: 8,
+				speed: 3
+			},
+			repulse: {
+				distance: 200,
+				duration: 0.4
+			},
+			push: {
+				particles_nb: 4
+			},
+			remove: {
+				particles_nb: 2
+			}
+		}
+	},
+	retina_detect: true
+});
+
+</script>
+  
 </section>
 
 
@@ -173,101 +363,88 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 		  </div>
 
 		  <!-- team carousel -->
-		  <div id="team-carousel" class="owl-carousel">
-
-		  <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+		  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
 			<div class="team-thumb">
 			  <div class="image-holder">
-				<img src="img/speakers2018/jayt.jpg" class="img-responsive img-circle img-circle-hw" alt="Jay Thadeshwar">
+				<img src="img/speakers2018/jayt.jpg" class="  img-circle-hw" alt="Jay Thadeshwar">
 			  </div>
-			  <h2 class="heading">Jay Thadeshwar</h2>
+			   <h4 class="heading" style="font-size: 20px!important;">Jay Thadeshwar</h4>
 			  <p class="description">Poised Media</p>
-			</div>
 		  </div>
-		  
-		  <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+		  </div>
+		  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
 			<div class="team-thumb">
 			  <div class="image-holder">
-				<img src="img/speakers2018/aditya.png" class="img-responsive img-circle img-circle-hw" alt="Aditya Joshi">
+				<img src="img/speakers2018/aditya.png" class=" img-circle-hw" alt="Aditya Joshi">
 			  </div>
-			  <h2 class="heading">Aditya Joshi</h2>
+			   <h4 class="heading" style="font-size: 20px!important;">Aditya Joshi</h4>
 			  <p class="description">Researcher in Natural Language Processing (NLP)</p>
-			</div>
 		  </div>
-
-		  <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+		  </div>
+		  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
 			<div class="team-thumb">
 			  <div class="image-holder">
-				<img src="img/speakers2018/hemali.JPG" class="img-responsive img-circle img-circle-hw" alt="Hemali Vadalia">
+				<img src="img/speakers2018/hemali.JPG" class="  img-circle-hw" alt="Hemali Vadalia">
 			  </div>
-			  <h2 class="heading">Hemali Vadalia</h2>
+			   <h4 class="heading" style="font-size: 20px!important;">Hemali Vadalia</h4>
 			  <p class="description">Painter, Illustrator and Animator </p>
-			</div>
 		  </div>
-
-		  
-
-		  <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+		  </div>
+		  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
 			<div class="team-thumb">
 			  <div class="image-holder">
-				<img src="img/speakers2018/nischal_dwivedi.jpg" class="img-responsive img-circle img-circle-hw" alt="Nishchal Dwivedi">
+				<img src="img/speakers2018/nischal_dwivedi.jpg" class="  img-circle-hw" alt="Jay Thadeshwar">
 			  </div>
-			  <h2 class="heading">Nishchal Dwivedi</h2>
+			   <h4 class="heading" style="font-size: 20px!important;">Nishchal Dwivedi</h2>
 			  <p class="description">Research Fellow at Bhabha Atomic Research Centre</p>
-			</div>
 		  </div>
-
-		  <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+		  </div>
+		  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
 			<div class="team-thumb">
 			  <div class="image-holder">
-				<img src="img/speakers2018/mehak.jpg" class="img-responsive img-circle img-circle-hw" alt="Mehak Mirza Prabhu">
+				<img src="img/speakers2018/mehak.jpg" class="  img-circle-hw" alt="Jay Thadeshwar">
 			  </div>
-			  <h2 class="heading">Mehak Mirza Prabhu</h2>
+			 <h4 class="heading" style="font-size: 20px!important;">Mehak Mirza Prabhu</h2>
 			  <p class="description">Storyteller, Writer, Blogger, Performer </p>
-			</div>
 		  </div>
-
-		  <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+		  </div>
+		  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
 			<div class="team-thumb">
 			  <div class="image-holder">
-				<img src="img/speakers2018/shikhar.jpg" class="img-responsive img-circle img-circle-hw" alt="Shikhar Kamat">
+				<img src="img/speakers2018/shikhar.jpg" class="  img-circle-hw" alt="Jay Thadeshwar">
 			  </div>
-			  <h2 class="heading">Shikhar Kamat</h2>
+			    <h4 class="heading" style="font-size: 20px!important;">Shikhar Kamat</h2>
 			  <p class="description">Psychological Illusionist</p>
-			</div>
 		  </div>
-
-		  <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+		  </div>
+		  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
 			<div class="team-thumb">
 			  <div class="image-holder">
-				<img src="img/speakers2018/colsundaresan.jpg" class="img-responsive img-circle img-circle-hw" alt="Col. Sundaresan">
+				<img src="img/speakers2018/colsundaresan.jpg" class=" img-circle-hw" alt="Jay Thadeshwar">
 			  </div>
-			  <h2 class="heading">Col. Sundaresan</h2>
+			  <h4 class="heading" style="font-size: 20px!important;">Col. Sundaresan</h2>
 			  <p class="description">The man behind "Run with a soldier, Run for a soldier" Mission</p>
-			</div>
 		  </div>
-
-		  <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+		  </div>
+		  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
 			<div class="team-thumb">
 			  <div class="image-holder">
-				<img src="img/speakers2018/prasannaseshadri.jpg" class="img-responsive img-circle img-circle-hw" alt="Prasanna Seshadri">
+				<img src="img/speakers2018/prasannaseshadri.jpg" class="  img-circle-hw" alt="Jay Thadeshwar">
 			  </div>
-			  <h2 class="heading">Prasanna Seshadri</h2>
+			  <h4 class="heading" style="font-size: 20px!important;">Prasanna Seshadri</h2>
 			  <p class="description">Puzzle Master </p>
-			</div>
+		  </div>
+		  </div>
+		  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+			<div class="team-thumb">
+			  <div class="image-holder">
+				<img src="img/speakers2018/alif.jpg" class=" img-circle-hw" alt="Jay Thadeshwar">
+			  </div>
+			 <h4 class="heading" style="font-size: 20px!important;">Mohammad Muneem Nazir and Hardik Vaghela</h4>
+			  <p class="description">Alif</p>
+		  </div>
 		  </div>
 		  
-		   <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-			<div class="team-thumb">
-			  <div class="image-holder">
-				<img src="img/speakers2018/alif.jpg" class="img-responsive img-circle img-circle-hw" alt="Mohammad Muneem Nazir and Hardik Vaghela">
-			  </div>
-			  <h2 class="heading">Mohammad Muneem Nazir and Hardik Vaghela</h2>
-			  <p class="description">Alif</p>
-			</div>
-		  </div>
-
-		  </div>
 		  <!-- end team carousel -->
 
 		</div>
@@ -413,8 +590,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
   <div class="container">
      <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Contact Us</h2>	
                 </div>
             </div>
 	<div class="row">
@@ -449,6 +625,26 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                             </div>
                         </div>
                     </form>
+					<br>
+					<br>
+					<br>
+					<div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Subscribe to Newsletter</h2>
+                </div>
+            </div>
+					<form name="sentMessage" id="contactForm" novalidate>
+					<div class="col-lg-6 text-center" style="margin:0px;padding:0px;">
+						<div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+								</div>
+								<div class="col-lg-6 text-center" style="margin:0px;padding:0px;margin-top:10px;">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Subscribe</button>
+                            </div>
+					</form>
                 </div>
 
     </div>
