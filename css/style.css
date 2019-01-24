@@ -835,7 +835,8 @@ Added by Sneha
 
 .column {
   float: left;
-  width: 33.3%;
+  width: 20.0%;
+  height:205px;
   margin-bottom: 16px;
   padding: 0 8px;
 }

@@ -1,4 +1,4 @@
-/*
+514/*
 Template Name: Event HTML TEMPLATE
 Author: yaminncco
 
@@ -512,6 +512,7 @@ textarea.input {
 }
 
 .speaker .speaker-content {
+	
   position: relative;
   background: #dd0a37;
   text-align: right;
