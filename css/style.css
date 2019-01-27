@@ -727,8 +727,8 @@ Added by Sneha
 -----------------------------------------*/
 
 #speaker {
- 
-  background-image: url("/tedx2019/images/background.jpg")!important;
+ background-color:lightgrey;
+ /* background-image: url("/tedx2019/images/background.jpg")!important;*/
 }
 
 #speaker .item {
